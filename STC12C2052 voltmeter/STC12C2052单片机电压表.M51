@@ -1,0 +1,353 @@
+BL51 BANKED LINKER/LOCATER V6.00                                                        02/16/2014  17:08:51  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.00, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE STARTUP.obj, STC12C2052单片机电压表.obj TO STC12C2052单片机电压表
+
+
+MEMORY MODEL: SMALL WITH FLOATING POINT ARITHMETIC
+
+
+INPUT MODULES INCLUDED:
+  STARTUP.obj (?C_STARTUP)
+  STC12C2052单片机电压表.obj (STC12C2052单芲籣电压表)
+  C:\KEIL\C51\LIB\C51FPS.LIB (?C?FPMUL)
+  C:\KEIL\C51\LIB\C51FPS.LIB (?C?FPDIV)
+  C:\KEIL\C51\LIB\C51FPS.LIB (?C?FCAST)
+  C:\KEIL\C51\LIB\C51FPS.LIB (?C?CASTF)
+  C:\KEIL\C51\LIB\C51FPS.LIB (?C?FPGETOPN)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?UIDIV)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?LNEG)
+
+
+LINK MAP OF MODULE:  STC12C2052单片机电压表 (?C_STARTUP)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     000DH     UNIT         ?DT?STC12C2052单芲籣电压表
+            DATA    0015H     0002H     UNIT         _DATA_GROUP_
+            IDATA   0017H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     02C8H     UNIT         ?C?LIB_CODE
+            CODE    02CBH     00D9H     INBLOCK      ?PR?_DM?STC12C2052单芲籣电压表
+            CODE    03A4H     00A1H     INBLOCK      ?PR?TRANSFER?STC12C2052单芲籣电压表
+            CODE    0445H     0078H     INBLOCK      ?PR?XIAN_SHI?STC12C2052单芲籣电压表
+            CODE    04BDH     002FH     INBLOCK      ?PR?MAIN?STC12C2052单芲籣电压表
+            CODE    04ECH     002DH     INBLOCK      ?PR?_READ?STC12C2052单芲籣电压表
+            CODE    0519H     001EH     INBLOCK      ?PR?_DELAY?STC12C2052单芲籣电压表
+            CODE    0537H     000FH     INBLOCK      ?PR?_DELAYUS?STC12C2052单芲籣电压表
+            CODE    0546H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   STC12C2052单片机电压表 (?C_STARTUP)
+
+
+SEGMENT                                       DATA_GROUP 
+  +--> CALLED SEGMENT                       START    LENGTH
+-----------------------------------------------------------
+?C_C51STARTUP                               -----    -----
+  +--> ?PR?MAIN?STC12C2052单芲籣电压表
+
+?PR?MAIN?STC12C2052单芲籣电压表             0015H    0002H
+  +--> ?PR?TRANSFER?STC12C2052单芲籣电压表
+  +--> ?PR?XIAN_SHI?STC12C2052单芲籣电压表
+
+BL51 BANKED LINKER/LOCATER V6.00                                                      02/16/2014  17:08:51  PAGE 2
+
+
+?PR?TRANSFER?STC12C2052单芲籣电压表         -----    -----
+  +--> ?PR?_READ?STC12C2052单芲籣电压表
+
+?PR?_READ?STC12C2052单芲籣电压表            -----    -----
+  +--> ?PR?_DELAY?STC12C2052单芲籣电压表
+
+?PR?XIAN_SHI?STC12C2052单芲籣电压表         -----    -----
+  +--> ?PR?_DM?STC12C2052单芲籣电压表
+  +--> ?PR?_DELAYUS?STC12C2052单芲籣电压表
+
+
+
+SYMBOL TABLE OF MODULE:  STC12C2052单片机电压表 (?C_STARTUP)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ?C_STARTUP
+  C:0546H         SEGMENT       ?C_C51STARTUP
+  I:0017H         SEGMENT       ?STACK
+  C:0000H         PUBLIC        ?C_STARTUP
+  D:00E0H         SYMBOL        ACC
+  D:00F0H         SYMBOL        B
+  D:0083H         SYMBOL        DPH
+  D:0082H         SYMBOL        DPL
+  N:0000H         SYMBOL        IBPSTACK
+  N:0100H         SYMBOL        IBPSTACKTOP
+  N:0080H         SYMBOL        IDATALEN
+  C:0549H         SYMBOL        IDATALOOP
+  N:0000H         SYMBOL        PBPSTACK
+  N:0100H         SYMBOL        PBPSTACKTOP
+  N:0000H         SYMBOL        PDATALEN
+  N:0000H         SYMBOL        PDATASTART
+  N:0000H         SYMBOL        PPAGE
+  N:0000H         SYMBOL        PPAGEENABLE
+  D:00A0H         SYMBOL        PPAGE_SFR
+  D:0081H         SYMBOL        SP
+  C:0546H         SYMBOL        STARTUP1
+  N:0000H         SYMBOL        XBPSTACK
+  N:0000H         SYMBOL        XBPSTACKTOP
+  N:0000H         SYMBOL        XDATALEN
+  N:0000H         SYMBOL        XDATASTART
+  C:0000H         LINE#         126
+  C:0546H         LINE#         133
+  C:0548H         LINE#         134
+  C:0549H         LINE#         135
+  C:054AH         LINE#         136
+  C:054CH         LINE#         185
+  C:054FH         LINE#         196
+  -------         ENDMOD        ?C_STARTUP
+
+  -------         MODULE        STC12C2052单芲籣电压表
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0091H         PUBLIC        P1M0
+  D:0092H         PUBLIC        P1M1
+  D:0090H         PUBLIC        P1
+  D:00B1H         PUBLIC        P3M0
+BL51 BANKED LINKER/LOCATER V6.00                                                      02/16/2014  17:08:51  PAGE 3
+
+
+  D:00A0H         PUBLIC        P2
+  D:00B2H         PUBLIC        P3M1
+  D:00B0H         PUBLIC        P3
+  B:0090H.4       PUBLIC        LED0
+  B:0090H.3       PUBLIC        LED1
+  B:0090H.0       PUBLIC        LED2
+  B:00B0H.0       PUBLIC        LED3
+  D:00A8H         PUBLIC        IE
+  C:0519H         PUBLIC        _delay
+  D:00B8H         PUBLIC        IP
+  D:00D8H         PUBLIC        CCON
+  C:04BDH         PUBLIC        main
+  D:00C5H         PUBLIC        ADC_CONTR
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  B:0090H.1       PUBLIC        A
+  B:00B0H.2       PUBLIC        C
+  B:00B0H.4       PUBLIC        D
+  B:00B0H.5       PUBLIC        E
+  D:00C6H         PUBLIC        ADC_DATA
+  B:0090H.2       PUBLIC        F
+  B:00B0H.1       PUBLIC        G
+  B:00B0H.3       PUBLIC        H
+  D:0008H         PUBLIC        M
+  D:000AH         PUBLIC        N
+  C:02D0H         PUBLIC        _dm
+  D:000CH         PUBLIC        R
+  C:0445H         PUBLIC        xian_shi
+  D:000EH         PUBLIC        d
+  B:0090H.5       PUBLIC        B_B
+  D:0013H         PUBLIC        h
+  D:00C8H         PUBLIC        T2CON
+  C:03A4H         PUBLIC        transfer
+  D:00D0H         PUBLIC        PSW
+  C:053BH         PUBLIC        _delayus
+  C:04ECH         PUBLIC        _Read
+  C:0537H         SYMBOL        L?0057
+  -------         PROC          L?0056
+  -------         ENDPROC       L?0056
+  C:0537H         SYMBOL        L?0057
+  -------         PROC          _DELAYUS
+  D:0006H         SYMBOL        x
+  C:053BH         LINE#         25
+  C:053BH         LINE#         26
+  C:053BH         LINE#         28
+  C:0545H         LINE#         29
+  -------         ENDPROC       _DELAYUS
+  -------         PROC          _DELAY
+  D:0006H         SYMBOL        t
+  -------         DO            
+  D:0004H         SYMBOL        i
+  -------         ENDDO         
+  C:0519H         LINE#         40
+  C:0519H         LINE#         41
+  C:0519H         LINE#         43
+  C:0522H         LINE#         44
+  C:0536H         LINE#         45
+BL51 BANKED LINKER/LOCATER V6.00                                                      02/16/2014  17:08:51  PAGE 4
+
+
+  -------         ENDPROC       _DELAY
+  -------         PROC          _READ
+  D:0007H         SYMBOL        CHA
+  -------         DO            
+  D:0003H         SYMBOL        AD_FIN
+  -------         ENDDO         
+  C:04ECH         LINE#         52
+  C:04ECH         LINE#         53
+  C:04ECH         LINE#         54
+  C:04EEH         LINE#         56
+  C:04F1H         LINE#         57
+  C:04F4H         LINE#         58
+  C:04F5H         LINE#         59
+  C:04F8H         LINE#         60
+  C:04F9H         LINE#         61
+  C:04FCH         LINE#         62
+  C:0502H         LINE#         64
+  C:0505H         LINE#         65
+  C:0506H         LINE#         66
+  C:0507H         LINE#         67
+  C:0508H         LINE#         68
+  C:0509H         LINE#         69
+  C:050CH         LINE#         70
+  C:050CH         LINE#         71
+  C:0511H         LINE#         72
+  C:0513H         LINE#         73
+  C:0516H         LINE#         74
+  C:0518H         LINE#         75
+  -------         ENDPROC       _READ
+  -------         PROC          TRANSFER
+  C:03A4H         LINE#         82
+  C:03A4H         LINE#         83
+  C:03A4H         LINE#         84
+  C:03ADH         LINE#         85
+  C:03B6H         LINE#         86
+  C:03F6H         LINE#         88
+  C:03FCH         LINE#         89
+  C:0404H         LINE#         90
+  C:0412H         LINE#         91
+  C:041EH         LINE#         92
+  C:042CH         LINE#         93
+  C:0438H         LINE#         94
+  C:0444H         LINE#         96
+  -------         ENDPROC       TRANSFER
+  -------         PROC          XIAN_SHI
+  C:0445H         LINE#         98
+  C:0445H         LINE#         99
+  C:0445H         LINE#         100
+  C:0450H         LINE#         101
+  C:0450H         LINE#         102
+  C:0453H         LINE#         103
+  C:0456H         LINE#         104
+  C:0459H         LINE#         105
+  C:045CH         LINE#         106
+  C:045CH         LINE#         107
+  C:0460H         LINE#         108
+  C:0463H         LINE#         109
+BL51 BANKED LINKER/LOCATER V6.00                                                      02/16/2014  17:08:51  PAGE 5
+
+
+  C:0468H         LINE#         110
+  C:046AH         LINE#         111
+  C:046DH         LINE#         112
+  C:046FH         LINE#         113
+  C:0475H         LINE#         114
+  C:047AH         LINE#         115
+  C:047CH         LINE#         116
+  C:047FH         LINE#         117
+  C:0481H         LINE#         118
+  C:0487H         LINE#         119
+  C:048DH         LINE#         120
+  C:048FH         LINE#         121
+  C:0495H         LINE#         122
+  C:0497H         LINE#         123
+  C:049DH         LINE#         124
+  C:04A1H         LINE#         125
+  C:04A3H         LINE#         126
+  C:04A5H         LINE#         127
+  C:04A7H         LINE#         128
+  C:04ADH         LINE#         129
+  C:04B1H         LINE#         130
+  C:04B3H         LINE#         131
+  C:04B5H         LINE#         132
+  C:04B7H         LINE#         133
+  -------         ENDPROC       XIAN_SHI
+  C:02CBH         SYMBOL        L?0055
+  -------         PROC          L?0054
+  -------         ENDPROC       L?0054
+  C:02CBH         SYMBOL        L?0055
+  -------         PROC          _DM
+  D:0006H         SYMBOL        mz
+  C:02D0H         LINE#         137
+  C:02D0H         LINE#         138
+  C:02D0H         LINE#         139
+  C:02FDH         LINE#         140
+  C:02FDH         LINE#         141
+  C:0305H         LINE#         142
+  C:0309H         LINE#         143
+  C:0315H         LINE#         144
+  C:0323H         LINE#         145
+  C:0331H         LINE#         146
+  C:033FH         LINE#         147
+  C:034DH         LINE#         148
+  C:0355H         LINE#         149
+  C:0363H         LINE#         150
+  C:0374H         LINE#         151
+  C:0382H         LINE#         152
+  C:0393H         LINE#         153
+  C:03A3H         LINE#         154
+  C:03A3H         LINE#         155
+  -------         ENDPROC       _DM
+  -------         PROC          MAIN
+  -------         DO            
+  D:0015H         SYMBOL        i
+  -------         ENDDO         
+  C:04BDH         LINE#         166
+  C:04BDH         LINE#         167
+BL51 BANKED LINKER/LOCATER V6.00                                                      02/16/2014  17:08:51  PAGE 6
+
+
+  C:04BDH         LINE#         168
+  C:04C0H         LINE#         169
+  C:04C3H         LINE#         170
+  C:04C6H         LINE#         171
+  C:04C9H         LINE#         172
+  C:04CBH         LINE#         173
+  C:04CDH         LINE#         174
+  C:04CFH         LINE#         175
+  C:04D1H         LINE#         177
+  C:04D1H         LINE#         178
+  C:04D1H         LINE#         180
+  C:04D9H         LINE#         181
+  C:04E1H         LINE#         182
+  C:04E1H         LINE#         183
+  C:04E3H         LINE#         184
+  C:04E8H         LINE#         185
+  C:04E8H         LINE#         186
+  C:04EAH         LINE#         187
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        STC12C2052单芲籣电压表
+
+  -------         MODULE        ?C?FPMUL
+  C:0003H         PUBLIC        ?C?FPMUL
+  -------         ENDMOD        ?C?FPMUL
+
+  -------         MODULE        ?C?FPDIV
+  C:010CH         PUBLIC        ?C?FPDIV
+  -------         ENDMOD        ?C?FPDIV
+
+  -------         MODULE        ?C?FCAST
+  C:01B3H         PUBLIC        ?C?FCASTC
+  C:01AEH         PUBLIC        ?C?FCASTI
+  C:01A9H         PUBLIC        ?C?FCASTL
+  -------         ENDMOD        ?C?FCAST
+
+  -------         MODULE        ?C?CASTF
+  C:01E7H         PUBLIC        ?C?CASTF
+  -------         ENDMOD        ?C?CASTF
+
+  -------         MODULE        ?C?UIDIV
+  C:0268H         PUBLIC        ?C?UIDIV
+  -------         ENDMOD        ?C?UIDIV
+
+  -------         MODULE        ?C?LNEG
+  C:02BDH         PUBLIC        ?C?LNEG
+  -------         ENDMOD        ?C?LNEG
+
+Program Size: data=24.0 xdata=0 code=1362
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
